@@ -15,7 +15,7 @@ class AdminController extends Controller
         $user = Auth::user()->status;
 
         if ($user == 1) {
-            return view('backend.layouts.app');
+            return view('backend.layouts.main');
         } else {
             return view('auth.login');
         }
