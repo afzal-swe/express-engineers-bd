@@ -22,12 +22,12 @@
   <link href="{{ asset ('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{ asset ('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
   <link href="{{ asset ('frontend/assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
-  <link href="{{ asset ('frontend/assets/vendor/aos/aos.css" rel="stylesheet')}}">
+  <link href="{{ asset ('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{ asset ('frontend/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{ asset ('frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="{{ asset ('frontend/assets/css/main.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: UpConstruction
@@ -100,7 +100,7 @@
 
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div class="carousel-item active" href="{{ asset('frontend/assets/img/hero-carousel/hero-carousel-1.jpg')}}"></div>
+      <div class="carousel-item active" style="background-image: url(frontend/assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
       <div class="carousel-item" style="background-image: url(frontend/assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
       <div class="carousel-item" style="background-image: url(frontend/assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
       <div class="carousel-item" style="background-image: url(frontend/assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
@@ -188,7 +188,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(frontend/assets/img/projects/construction-1.jpg);"></div>
+                  <div class="card-bg" style="background-image: url(frontend/assets/img/constructions-1.jpg);"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -590,7 +590,7 @@
                 <div class="portfolio-info">
                   <h4>Construction 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/projects/construction-2.jpg" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ asset ('frontend/assets/img/projects/construction-2.jpg')}}" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -1003,7 +1003,7 @@
   <script src="{{ asset ('frontend/assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset ('frontend/assets/js/main.js')}}"></script>
 
 </body>
 
