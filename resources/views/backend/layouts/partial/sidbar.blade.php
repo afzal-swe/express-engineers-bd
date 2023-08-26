@@ -99,9 +99,26 @@
         </ul>
       </li><!-- End Charts Nav -->
 
-      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Express Slider</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="charts-chartjs.html">
+              <i class="bi bi-circle"></i><span>Create Slider</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span>Manage Slider</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Charts Nav -->
 
       <li class="nav-heading">Pages</li>
+      
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="users-profile.html">
