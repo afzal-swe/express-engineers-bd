@@ -17,7 +17,7 @@ class AdminController extends Controller
         if ($user == 1) {
             return view('backend.layouts.main');
         } else {
-            return view('auth.login');
+            return view('frontend.layouts.app');
         }
     }
 }

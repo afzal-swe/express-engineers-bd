@@ -18,7 +18,7 @@ use App\Http\Controllers\Backend\AdminController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.layouts.app');
 });
 
 Route::get('/admin/login', [AdminController::class, 'login'])->name('dashboard')->middleware(['auth', 'verified']);
